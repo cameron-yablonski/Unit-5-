@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+  <meta charset="utf-8">
+  <meta name="descripion" content="My first webpage, with image">
+  <meta name="keywords" content="MTHS, website">
+  <meta name="author" content="Cameron.Yablonski">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/default.css">
+  <head>
+  <title>Area of square in javascript</title>
+  </head>
+  <body>
+  <h1 align="center">Area of square in javascript</h1>
+  <p id="area_status"></p>
+  <p><label>Enter Your Side Length</label></p>
+  <p><input id="side" type="text" placeholder="Enter Your Side Length" /></p>
+  <p><button onclick="areaofsquare()">calculate</button></p>
+  <script>
+   function areaofsquare()
+   {
+      var side = document.getElementById("side").value;
+      var output = side*side;
+      document.getElementById("area_status").innerHTML="your area is "+output;
+   }
+ </script>
+</body>
+</html>
+
